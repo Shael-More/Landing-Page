@@ -59,8 +59,9 @@ header {
 }
 
 .header-body {
-    min-height : 100vh;
+    min-height : 72vh;
     padding: 2em;
+    color: #e6d2af;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -78,7 +79,7 @@ header {
     height: 75vh;
     min-height: 30em;
     position: relative;
-    z-index: 1;
+    z-index: 5;
 }
 
 .main-img::before,
@@ -117,8 +118,18 @@ nav {
     z-index: 2;
 }
 
+.brand {
+    color: #e6d2af;
+    letter-spacing: 3px;
+    font-size: 16px;
+    font-weight: 500;
+    
+}
+
 .brand span {
     color: var(--accent);
+    padding-right: 2px;
+    font-weight: 500;
 }
 
 .toggle {
@@ -131,6 +142,14 @@ nav {
     font-size: 3.5em;
     letter-spacing: 2px;
     margin: 2em 0 1em 0;
+}
+
+/* .toggle-text {
+     display: block; 
+} */
+
+h3 {
+    color: #e6d2af;
 }
 
 .text, .links {
@@ -162,6 +181,7 @@ nav {
     border-radius: 50%;
     cursor: pointer;
     transition: 0.3s;
+    margin-right: 30px;
 }
 
 .play-btn:hover {
@@ -179,7 +199,9 @@ nav {
 
 .links a {
     font-size: 0.8em;
+    color: #e6d2af;
     text-transform: uppercase;
+    padding: 0 100px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -277,17 +299,16 @@ nav {
 
      .background-text {
         margin: 0;
-        font-size: 13vw;
+        font-size: 12vw;
         color: var(--text-bg);
         line-height: 0.8em;
         opacity: 0.5;
         position: absolute;
-        top: 0;
+        top: -20px;
         left: 50%;
         z-index: 0;
         pointer-events: none;
      }
 
-
-    
+  
 }
