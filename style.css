@@ -56,11 +56,10 @@ header {
     color: var(--text-primary);
     overflow: hidden;
     position: relative;
-    z-index: 4;
 }
 
 .header-body {
-    min-height : 72vh;
+    min-height : 100vh;
     padding: 2em;
     color: #e6d2af;
     display: flex;
@@ -80,7 +79,7 @@ header {
     height: 75vh;
     min-height: 30em;
     position: relative;
-    z-index: 15;
+    z-index: 1;
 }
 
 .main-img::before,
@@ -96,7 +95,7 @@ header {
     border: 1em solid var(--accent);
     right: -5em;
     top: 10%;
-    z-index: 10;
+    z-index: 1;
 }
 
 .main-img::after {
@@ -120,18 +119,18 @@ nav {
     z-index: 2;
 }
 
-.brand {
+/* .brand {
     color: #e6d2af;
     letter-spacing: 3px;
     font-size: 16px;
     font-weight: 500;
     
-}
+} */
 
 .brand span {
     color: var(--accent);
-    padding-right: 2px;
-    font-weight: 500;
+    /* padding-right: 2px;
+    font-weight: 500; */
 }
 
 .toggle {
@@ -147,9 +146,9 @@ nav {
     color: #e6d2af;
 }
 
-.toggle-text{
+/* .toggle-text{
      display: block; 
-}
+} */
 
 
 .text, .links {
@@ -274,7 +273,7 @@ nav {
 
     .text-left::before{
         background-color: var(--primary);
-        right: 30%;
+        right: 50%;
     }
 
     .text-right::before{
